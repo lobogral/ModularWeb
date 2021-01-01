@@ -6,14 +6,8 @@ def getModule(file, identation):
     return text + "\n"
 
 outputFile = open("holaMundo.html","w") 
-outputFile.write("<html>\n")
-outputFile.write("  <head>\n")
-outputFile.write("    <title>HTML</title>\n")
-outputFile.write("  <head>\n")
-outputFile.write("  <body>\n")
-outputFile.write("    Esto es HTML!\n")
-outputFile.write(getModule("modulo1.html", 6))
-outputFile.write(getModule("modulo2.html", 6))
-outputFile.write("  </body>\n")
-outputFile.write("</html>\n")
+outputFile.write(getModule("InitialPage.html", 0))
+outputFile.write(getModule("ModulePage1.html", 6))
+outputFile.write(getModule("ModulePage2.html", 6))
+outputFile.write(getModule("FinalPage.html", 0))
 outputFile.close() 
